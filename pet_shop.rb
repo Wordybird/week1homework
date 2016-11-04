@@ -1,11 +1,13 @@
 def pet_shop_name(name)
-  name=@pet_shop[:name]
-  return name
+  return name[:name]
 end
 
 
 def total_cash(admin_total)
-  admin_total=@pet_shop[:admin][:total_cash]
-  return admin_total
+  return admin_total[:admin][:total_cash]
 end
 
+def add_or_remove_cash__add(cash,money)
+  cash[:admin][:total_cash]=cash[:admin][:total_cash]+money
+  return cash
+end
