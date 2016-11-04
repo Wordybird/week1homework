@@ -28,5 +28,7 @@ end
 
 def stock_count(count)
   return count[:pets].length
+end
 
+def all_pets_by_breed__found(pets,pets_by_breed)
 end
