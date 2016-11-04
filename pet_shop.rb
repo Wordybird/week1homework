@@ -31,4 +31,11 @@ def stock_count(count)
 end
 
 def all_pets_by_breed__found(pets,pets_by_breed)
+  breed_found=[]
+  for pet in pets[:pets]
+    if (pet[:breed])==pets_by_breed
+      breed_found << pet
+    end
+    return breed_found
+  end
 end
